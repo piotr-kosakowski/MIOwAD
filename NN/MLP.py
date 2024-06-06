@@ -3,7 +3,8 @@ from typing import List, Callable
 import matplotlib.pyplot as plt
 
 from functions import *
-from EarlyStopping import EarlyStopping
+
+
 class CustomMLP:
     def __init__(self, layer_sizes: List[int], weights: List[np.array] = None, biases: List[np.array] = None, activation_functions: List[Callable[[np.array], np.array]] = None,
                  activation_functions_derivatives: List[Callable[[np.array], np.array]] = None, loss: Callable[[np.array, np.array], float] = mse,
